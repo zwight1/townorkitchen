@@ -1,1 +1,13 @@
+.jumbotron {
+    background-image: url("../images/town_kitchen.png");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: rgb(20, 102, 129);
+}
 
+body {
+    background-image: url("../images/background_food.jpg");
+}
