@@ -2,9 +2,9 @@
 var townName = "";
 var townURL = "";
 $(document).ready(function() {
-    $("#form").on("submit", function(e){
+    $("#search").on("click", function(event){
 
-        e.preventDefault();
+        event.preventDefault();
         console.log("buttonclicked");
         
 
