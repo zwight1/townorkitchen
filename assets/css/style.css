@@ -1,5 +1,6 @@
 .jumbotron {
     background-image: url("../images/town_kitchen.png");
+    background-size: 100%;
     min-height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,3 +12,13 @@
 body {
     background-image: url("../images/Vegbackground_top.jpg");
 }
+#recipeDiv {
+    max-width: 100%;
+}
+.container {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+  }
+

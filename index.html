@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/icon.png"/>
 </head>
 <body>
+      
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center">Town Or Kitchen</h1>
@@ -22,62 +25,50 @@
                     <h1 class="panel-title" id="add-title"></h1>
                 </div>
                 <div class="panel-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Type of Food:</label>
-                            <input class="form-control" id="name" type="text">
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group col-md-8">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" title="Provide valid city" />
-                            </div>
-                            <div class="form-group col-md-4">
-                                    <label for="inputZip">ZIP Code: </label>
-                                    <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}" title="Five digit number zip code" />
-                            </div>
-                        <button class="btn btn-info" id="submit-btn" type="submit">Submit</button>
-                    </form>
+                        <form>
+                                <div id="search-bar">
+                                <label for="name">Type of Food:</label>
+                                <input type="text" id="search-input" type="search" placeholder="search">
+                                <button id="search" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                        
+                            </form>
                 </div>
             </div>
         </div>
         <div class="container">
 
             <div class="row">
-        
-              <!-- Calculator Panel -->
-              <div class="col-lg-4">
-                <div class="card">
-                  <h3 class="card-header bg-info text-white text-center v-align-content">Town Food
-                  <br>Restaurant</h3>
-                  <div class="card-body">
-                    <h1 id="typeFood"></h1>
-                    <h1 id="item"></h1>
-                    <h1 id=""></h1>
-                    <hr>
-                    <h1 id="result"></h1>
-                  </div>
-                </div>
-              </div>
-        
-             <img class="col-lg-3" src="assets/images/or.png" alt="OR symbol"></a>
-
-              <div class="col-lg-5">
-                <div class="card">
-                  <h3 class="card-header bg-info text-white text-center v-align-content">Kitchen Food
-                  <br>Home Recipe</h3>
-                  <div class="card-body">
-                    <h1 id="homeFood"></h1>
-                    <h1 id="homeItem"></h1>
-                    <h1 id=""></h1>
-                    <hr>
-                    <h1 id="result"></h1>
-                  </div>
-                </div>
-              </div>
+                    <div class="col-sm-4">
+                            <div class="card">
+                              <h3 class="card-header bg-info text-white text-center v-align-content">Town Food
+                              <br>Restaurant</h3>
+                              <div class="card-body">
+                                <h1 id="typeFood"></h1>
+                                <h1 id="item"></h1>
+                                <h1 id=""></h1>
+                                <hr>
+                                <!-- <h1 id="result"></h1> -->
+                              </div>
+                            </div>
+                          </div>
+                    <div class="col-sm-2">
+                         <img src="assets/images/or.png" alt="OR symbol"></a>
+                    </div>
+            
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <h3 class="card-header bg-info text-white text-center v-align-content">Kitchen Food
+                              <br>Home Recipe</h3>
+                              <div id="recipeDiv" class="card-body">
+                                <hr>
+                                <p id="result"></p>
+                              </div>
+                            </div>
+                          </div>
+                    
             </div>
-          </div>
+        </div>
     <footer class="mt-5 text-center text-red fixed-bottom">
 
         <div class="absolute-top pt-1 mt-5 bg-info">
@@ -95,6 +86,10 @@
 
     <!-- Added link to Javascript-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
+    <script src="assets/javascript/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </body>
 <html></html>
+
