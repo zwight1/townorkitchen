@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#search").on("click", function(event){
 
         event.preventDefault();
-        console.log("buttonclicked");
+        //console.log("buttonclicked");
         
 
         var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=1213&entity_type=city&q=Chinese&count=5";
