@@ -39,6 +39,10 @@ $(document).ready (function() {
                 var recipeLink = $("<a target='_blank' href='" + linkTo + "'>" + response.recipes[i].title + "</a>");
                 var recipeImage = $("<img>").attr("src", response.recipes[i].image_url);
                 var linkTo = Object.values(response.recipes[i])[3];
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
                 console.log(linkTo);
                 // if(response.recipes[i].title.toLowerCase().includes(search) && limitTo < 5){
                 
@@ -54,4 +58,9 @@ $(document).ready (function() {
 
         $("form").trigger("reset");
         };
+<<<<<<< HEAD
 });    
+=======
+});    
+
+>>>>>>> master

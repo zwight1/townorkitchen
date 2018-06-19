@@ -1,4 +1,3 @@
-//var city_id = ""
 var townName = "";
 var townURL = "";
 $(document).ready(function() {
